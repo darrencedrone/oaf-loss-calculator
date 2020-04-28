@@ -1,0 +1,33 @@
+.wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Montserrat Alternates', sans-serif;
+  color: black;
+  background-color: white;
+  margin-top: 30px;
+}
+.left{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Montserrat Alternates', sans-serif;
+  color: black;
+  background-color: white;
+
+}
+
+.header {
+  padding:60px;
+  background-color: #774c9e;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  font-family: 'Montserrat Alternates', sans-serif;
+ }
