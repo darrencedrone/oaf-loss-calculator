@@ -1,0 +1,32 @@
+{
+  "name": "oaf-loss-calculator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "./node_modules/.bin/env-cmd ./node_modules/.bin/nodemon index.js",
+    "dev:migrate": "./node_modules/.bin/env-cmd ./node_modules/.bin/sequelize db:migrate --env development --config ./configs/sequelize.js",
+    "lint": "./node_modules/.bin/eslint --format codeframe .",
+    "lint:fix": "./node_modules/.bin/eslint --fix --format codeframe ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darrencedrone/oaf-loss-calculator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/darrencedrone/oaf-loss-calculator/issues"
+  },
+  "homepage": "https://github.com/darrencedrone/oaf-loss-calculator#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql2": "^2.1.0",
+    "sequelize-cli": "^5.5.1"
+  },
+  "devDependencies": {
+    "env-cmd": "^10.1.0",
+    "eslint": "^7.2.0",
+    "nodemon": "^2.0.4"
+  }
+}
