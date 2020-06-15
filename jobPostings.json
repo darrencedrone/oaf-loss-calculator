@@ -1,0 +1,17 @@
+const jobPostings = {
+  [
+company: 'Glassdoor',	 cost: 498.00 
+company: 'Monster',	 cost: 399.00 
+company: 'Career Builder',	  cost: 398.00 
+company: 'Simply Hired',	  cost: 0  
+company: 'LinkedIn', cost: 990.00 
+company: 'Dice'	,  cost: 395.00 
+company: 'SnagAJob',	 cost: 178.00 
+company: 'Craigslist',	  cost: 45.00 
+company: 'Indeed',	  cost: 300.00 
+company: 'Workable',  cost: 198.00 
+company: 'Proven',  cost: 203.00 
+company: 'ZipRecruiter',	 cost: 178.00 
+company: 'Job.com',  cost: 398.00
+  ]
+}
