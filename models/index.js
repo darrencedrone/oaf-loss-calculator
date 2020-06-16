@@ -25,4 +25,5 @@ module.exports = {
   tasks,
   jobPostingCosts,
   Sequelize,
+  Op: Sequelize.Op,
 }

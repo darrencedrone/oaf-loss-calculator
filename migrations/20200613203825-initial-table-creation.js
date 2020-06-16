@@ -1,3 +1,5 @@
+'use strict'
+
 
 module.exports = {
   up: async (queryInterface, Sequelize) => {
@@ -10,8 +12,8 @@ module.exports = {
     await queryInterface.createTable('positions', {
       id: { type: Sequelize.INTEGER, autoIncrement: true, primaryKey: true },
       position: { type: Sequelize.STRING, allowNull: false },
-      salary: { type: Sequelize.INTEGER, allowNull: false },
-      benefits: { type: Sequelize.INTEGER, allowNull: false },
+      salary: { type: Sequelize.DECIMAL, allowNull: false },
+      benefits: { type: Sequelize.DECIMAL, allowNull: false },
       createdAt: { type: Sequelize.DATE, allowNull: false, defaultValue: Sequelize.literal('CURRENT_TIMESTAMP'), },
       updatedAt: {
         type: Sequelize.DATE,

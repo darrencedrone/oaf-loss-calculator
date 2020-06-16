@@ -1,18 +1,24 @@
 const express = require('express')
-// const { ,  } = require('./controllers/positions')
-// const { ,  } = require('./controllers/tasks')
-// const { ,  } = require('./controllers/jobPostingCosts')
+const path = require('path')
+const { getAllJobPostingCosts, getJobPostingCostByCompanyOrId } = require('./controllers/jobPostingCosts')
+const { getAllPositions, getPositionByIdOrTitle } = require('./controllers/positions')
+const { getAllTasks, getTaskById } = require('./controllers/tasks')
 
 const app = express()
 
-app.get('/jobPostingCosts')
-app.get('/jobPostingCosts/:id')
+app.use(express.static(path.join(__dirname, 'public')))
 
-app.get('/positions',)
-app.get('/positions/:identifier',)
+app.get('/jobpostingcosts', getAllJobPostingCosts)
+app.get('/jobpostingcosts/:searchValue', getJobPostingCostByCompanyOrId)
 
-app.get('/tasks',)
-app.get('/tasks/:identifier',)
+app.get('/positions', getAllPositions)
+app.get('/positions/:searchValue', getPositionByIdOrTitle)
+
+app.get('/tasks', getAllTasks)
+app.get('/tasks/:id', getTaskById)
+
+
+app.all('*', (request, response) => response.sendFile(path.resolve(__dirname, 'public', 'index.html')))
 
 app.listen(1337, () => {
   console.log('Listening on port 1337...') // eslint-disable-line no-console

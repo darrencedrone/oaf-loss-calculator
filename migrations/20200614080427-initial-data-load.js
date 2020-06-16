@@ -1,12 +1,13 @@
+'use strict'
 
 module.exports = {
   up: async (queryInterface) => {
-  /*
-  Add altering commands here.
-  Return a promise to correctly handle asynchronicity.
-  Example:
-  return queryInterface.createTable('users', { id: Sequelize.INTEGER });
-*/
+    /*
+    Add altering commands here.
+    Return a promise to correctly handle asynchronicity.
+    Example:
+    return queryInterface.createTable('users', { id: Sequelize.INTEGER });
+  */
     await queryInterface.bulkInsert('positions', [
       { position: 'Corporate Recruiter', salary: 32.41, benefits: 11.34 },
       { position: 'Director of Engineering(Hiring Manager)', salary: 84.33, benefits: 29.52 },

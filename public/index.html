@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./javascript/script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div>Cost of Loss Calculator</div>
+  <form onsubmit="calculatePostingFee()">
+    <label>Field A</label><br>
+    <select id="fielda" name="fielda">
+      <option value="Jobs.com">Jobs.com</option>
+      <option value="Glassdoor">Glassdoor</option>
+      <option value="Monster">Monster</option>
+      <option value="Career Builder">Career Builder</option>
+      <option value="Simply Hired">Simply Hired</option>
+      <option value="LinkedIn">LinkedIn</option>
+      <option value="Dice">Dice</option>
+      <option value="SnagAJob">SnagAJob</option>
+      <option value="Craigslist">Craigslist</option>
+      <option value="Indeed">Indeed</option>
+      <option value="Workable">Workable</option>
+      <option value="Proven">Proven</option>
+      <option value="ZipRecruiter">ZipRecruiter</option>
+      <br>
+      <label>Field B</label><br>
+      <input type="text" id="fieldb" name="fieldb"><br>
+      <Label>Field C</Label><br>
+      <input type="text" id="fieldc" name="fieldc"><br>
+      <input type="submit" value="Submit">
+  </form>
+</body>
