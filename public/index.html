@@ -10,9 +10,20 @@
 
 <body>
   <div>Cost of Loss Calculator</div>
-  <form onsubmit="calculatePostingFee()">
-    <label>Field A</label><br>
-    <select id="fielda" name="fielda">
+  <form>
+    <label>Select Career:</label>
+    <select id="careerSelection" name="careerSelection">
+      <option value="Corporate Recruiter">Corporate Recruiter</option>
+      <option value="Director of Engineering (Hiring Manager)">Director of Engineering (Hiring Manager)</option>
+      <option value="It Technician">It Technician</option>
+      <option value="Human Resources Manager">Human Resources Manager</option>
+      <option value="CEO, Executives/Decision-Maker">CEO, Executives/Decision-Maker</option>
+      <option value="Peer Worker (Estimated 3 people)">Peer Worker (Estimated 3 people)</option>
+    </select>
+  </form>
+  <form>
+    <label>Select Job Posting Site:</label>
+    <select id="jobPostingSite" name="jobPostingSite">
       <option value="Jobs.com">Jobs.com</option>
       <option value="Glassdoor">Glassdoor</option>
       <option value="Monster">Monster</option>
@@ -26,11 +37,18 @@
       <option value="Workable">Workable</option>
       <option value="Proven">Proven</option>
       <option value="ZipRecruiter">ZipRecruiter</option>
-      <br>
-      <label>Field B</label><br>
-      <input type="text" id="fieldb" name="fieldb"><br>
-      <Label>Field C</Label><br>
-      <input type="text" id="fieldc" name="fieldc"><br>
-      <input type="submit" value="Submit">
+    </select>
   </form>
+  <br>
+  <form onclick="sumAllCalculations()">
+    Enter Annual Salary:
+    <input type="text" id="annualSalary" name="annualSalary"><br>
+    <br>
+    <input type="button" value="Calculate Total Loss">
+  </form>
+  <br>
+  <p>Total Cost of Loss:</p>
+  <span id="finalCost"></span>
 </body>
+
+</html>
