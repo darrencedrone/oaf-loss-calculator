@@ -1,5 +1,166 @@
 body {
   font-family: 'Montserrat Alternates', sans-serif;
-  color: black;
-  background-color: white;
+  
+  
+  }
+.mediaViewInfo {
+	--web-view-name: OAF;
+  --web-view-id: OAF;
+  --web-scale-to-fit: true;
+	--web-scale-to-fit-type: fit;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+:root {
+	--web-view-ids: OAF;
+}
+
+.OAF_Class {
+	position: absolute;
+	width: 1080px;
+  height: 1920px;
+  padding-left: 120px;
+  padding-right: 120px;
+	background-color: rgba(252,252,252,1);
+	overflow: hidden;
+	--web-view-name: OAF;
+	--web-view-id: OAF;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+.Industry_Project_logo_Class {
+	position: absolute;
+	width: 440px;
+	height: 89px;
+	left: 320px;
+	top: 78px;
+	overflow: visible;
+}
+
+
+.Cost_of_Loss_Calculator_Class {
+	left: 383px;
+	top: 343px;
+	position: absolute;
+	overflow: visible;
+	width: 315px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: 'Montserrat Alternates', sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	color: rgba(33,63,127,1);
+
+}
+.Cost_of_Loss_Calculator_Title_Class{
+	font-size: 32px;
+	text-decoration: underline;
+  
+
+}
+.button{
+  background-color:#213F7F;
+  color:white;
+  border: none;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+
+}
+.Rectangle_1_Class {
+	opacity: 0.366;
+	fill: rgba(112,112,112,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Kit_-_Button_ghost_hover_Large_Class {
+	position: absolute;
+	width: 144px;
+	height: 60px;
+	left: 479px;
+	top: 900px;
+	overflow: visible;
+}
+.background_Class {
+	fill: rgba(62,62,62,1);
+}
+.background {
+	position: absolute;
+	overflow: visible;
+	width: 144px;
+	height: 60px;
+	left: 0px;
+	top: 0px;
+}
+.label_Class {
+	left: 33px;
+	top: 18px;
+	position: absolute;
+	overflow: visible;
+	width: 79px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Noto Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	color: rgba(252,252,252,1);
+}
+.Icon_awesome-search_Class {
+	fill: rgba(0,0,0,1);
+}
+.Icon_awesome-search {
+	overflow: visible;
+	position: absolute;
+	width: 35.997px;
+	height: 36.004px;
+	left: 984px;
+	top: 116px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Icon_zocial-facebook_Class {
+	fill: rgba(22,29,105,1);
+}
+.Icon_zocial-facebook {
+	overflow: visible;
+	position: absolute;
+	width: 19.368px;
+	height: 36px;
+	left: 867.257px;
+	top: 116px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Icon_ionic-logo-twitter_Class {
+	fill: rgba(22,29,105,1);
+}
+.Icon_ionic-logo-twitter {
+	overflow: visible;
+	position: absolute;
+	width: 33.482px;
+	height: 31.504px;
+	left: 906.518px;
+	top: 122.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Icon_awesome-instagram_Class {
+	fill: rgba(22,29,105,1);
+}
+.Icon_awesome-instagram {
+	overflow: visible;
+	position: absolute;
+	width: 31.518px;
+	height: 31.511px;
+	left: 816px;
+	top: 120px;
+	transform: matrix(1,0,0,1,0,0);
 }
