@@ -12,8 +12,8 @@ module.exports = {
     await queryInterface.createTable('positions', {
       id: { type: Sequelize.INTEGER, autoIncrement: true, primaryKey: true },
       position: { type: Sequelize.STRING, allowNull: false },
-      salary: { type: Sequelize.DECIMAL, allowNull: false },
-      benefits: { type: Sequelize.DECIMAL, allowNull: false },
+      salary: { type: Sequelize.DECIMAL(6, 2), allowNull: false },
+      benefits: { type: Sequelize.DECIMAL(6, 2), allowNull: false },
       createdAt: { type: Sequelize.DATE, allowNull: false, defaultValue: Sequelize.literal('CURRENT_TIMESTAMP'), },
       updatedAt: {
         type: Sequelize.DATE,
